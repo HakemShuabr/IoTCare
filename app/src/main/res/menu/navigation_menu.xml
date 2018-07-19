@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/nav_myacc"
+        android:icon="@mipmap/ic_account_circle_black_48dp"
+        android:title="My Account" />
+
+    <item android:id="@+id/nav_health"
+        android:icon="@mipmap/icons8wheelchair48color"
+        android:title="Patient Profile" />
+
+    <item android:id="@+id/nav_room"
+        android:icon="@mipmap/icons8temperature24"
+        android:title="Room Sensors" />
+
+    <item android:id="@+id/nav_data"
+        android:icon="@mipmap/folder"
+        android:title="View Data"
+        />
+
+    <item
+        android:id="@+id/nav_graph"
+        android:icon="@mipmap/graph"
+        android:title="Line Graph" />
+
+    <item android:id="@+id/nav_Report"
+        android:icon="@mipmap/icons8news48"
+        android:title="View Doctor Report" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_close_black_24dp"
+        android:title="Logout" />
+</menu>

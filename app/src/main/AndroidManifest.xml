@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.firstversionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".RestartService"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="RestartService" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SigninActivity"
+            android:label="@string/title_activity_signin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GuardActivity"
+            android:exported="true" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".SwitchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChairContorolActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PatientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DoctorReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DoctorHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RoomActivity"
+            android:exported="true" />
+        <activity android:name=".DoctorProfileActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".ManagementActivity" />
+        <activity android:name=".PatientProfileManagementActivity" />
+        <activity android:name=".PatientProfileEditorActivity" />
+        <activity android:name=".AdminProfileEditorActivity" />
+        <activity
+            android:name=".ExistUsersActivity"
+            android:exported="true" />
+        <activity android:name=".ExistUserProfileActivity" />
+        <activity android:name=".NewUserProfileActivity" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <activity android:name=".ViewReport" />
+        <activity android:name=".ReportsList" />
+        <activity android:name=".SingleReportView" />
+        <activity
+            android:name=".ViewData"
+            android:exported="true" />
+        <activity android:name=".PatientHomeActivity" />
+        <activity
+            android:exported="true"
+            android:name=".LineGraph"></activity>
+    </application>
+
+</manifest>

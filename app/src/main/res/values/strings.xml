@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IoT Care</string>
+    <string-array name="relationTypes">
+        <item>Family Member</item>
+        <item>Friend</item>
+        <item>Doctor</item>
+        <item>Superintendent</item>superintendent
+    </string-array>
+    <string name="title_activity_signin">Signin</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

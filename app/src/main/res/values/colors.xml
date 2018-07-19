@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="sea_blue">#C2DFFF</color>
+    <color name="aquamarine">#93FFE8</color>
+    <color name="light_green">#3EA99F</color>
+    <color name="tea_green">#CCFB5D</color>
+    <color name="vanilla">#F3E5AB</color>
+    <color name="peach">#FFE5B4</color>
+</resources>
